@@ -1,6 +1,5 @@
 //Import components
-import React from "react";
-import CourseOutlineSliders from "@components/CourseOutlineSlider";
+import CourseOutlineSliders from "@components/Pages/CourseOutlineSlider";
 //Import styles
 import "@styles/App/courseOutline.scss";
 

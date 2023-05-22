@@ -39,11 +39,11 @@ export default function StepThree() {
         </div>
       </div>
       <div className="content-three">
-      <img src={checkCircleGreen} alt="check-circle" />
-      <h3>
-        Your request has been successfully sent. We will contact you within 24
-        hours
-      </h3>
+        <img src={checkCircleGreen} alt="check-circle" />
+        <h3>
+          Your request has been successfully sent. We will contact you within 24
+          hours
+        </h3>
       </div>
     </div>
   );

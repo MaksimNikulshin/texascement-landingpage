@@ -1,4 +1,4 @@
-import { tabEdit } from "../store/slices/main";
+import { tabEdit } from "../../store/slices/main";
 import { useDispatch } from "react-redux";
 //Import images
 import logo from "@images/logo.svg";
@@ -8,19 +8,20 @@ import "@styles/components/footer.scss";
 export default function Footer() {
   const year = new Date().getFullYear();
   const dispatch = useDispatch();
+  const reset = () => {
+    dispatch(
+      tabEdit({
+        tab: null,
+        step: 0,
+      })
+    );
+    window.scrollTo(0, 0);
+  }
   return (
     <footer id="footer">
       <section className="content-footer">
         <img
-          onClick={() => {
-            dispatch(
-              tabEdit({
-                tab: null,
-                step: 0,
-              })
-            );
-            window.scrollTo(0, 0);
-          }}
+          onClick={reset}
           src={logo}
           alt="texas-cement-logo"
         />

@@ -1,5 +1,3 @@
-//Import components
-import React from "react";
 //Import images
 import helpCircle from "@images/helpCircle.svg";
 import checkSquare from "@images/check-square.svg";
@@ -41,7 +39,7 @@ export default function AboutUs() {
       <h4>
         We offer a two-week training and safety course that covers all aspects
         of on-call truck operation, from shipping and securing loads to driving
-        and safety.{" "}
+        and safety.
       </h4>
     </div>
   );

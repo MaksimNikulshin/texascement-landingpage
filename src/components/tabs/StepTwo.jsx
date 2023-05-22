@@ -84,7 +84,7 @@ export default function StepTwo() {
               <p>{currentTab?.tab?.paragraphTwo}</p>
               <p>{currentTab?.tab?.paragraphThree}</p>
               <button>
-                BUY{" "}
+                BUY
                 <b className={currentTab?.tab?.buttonStandard}>
                   {currentTab?.tab?.price}
                 </b>
@@ -169,7 +169,14 @@ export default function StepTwo() {
               })}
             />
           </label>
-          <input onClick={() => {window.scrollTo(0, 0);}} type="submit" value={"Send request"} disabled={!isValid} />
+          <input
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+            type="submit"
+            value={"Send request"}
+            disabled={!isValid}
+          />
         </form>
       </div>
     </div>

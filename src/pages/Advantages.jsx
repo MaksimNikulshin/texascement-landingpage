@@ -1,6 +1,5 @@
 //Import components
-import React from "react";
-import AdvantagesSlider from "@components/AdvantagesSlider";
+import AdvantagesSlider from "@components/Pages/AdvantagesSlider";
 //import images
 import starIcon from "@images/starIcon.svg";
 //Import styles

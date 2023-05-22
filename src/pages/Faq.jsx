@@ -64,7 +64,7 @@ export default function Faq() {
       {faqData.map((item, index) => (
         <div className="question" key={index}>
           <h4 onClick={() => toggleAnswer(index)}>
-            {item.question}{" "}
+            {item.question}
             <img
               style={{
                 transform:

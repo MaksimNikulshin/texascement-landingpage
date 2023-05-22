@@ -1,7 +1,7 @@
 //Import components
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import { tabEdit } from "../store/slices/main";
+import { tabEdit } from "../../store/slices/main";
 import { useDispatch } from "react-redux";
 //Import images
 import logo from "@images/logo.svg";
@@ -91,9 +91,9 @@ export default function Header() {
           className={burger ? "burger active" : "burger"}
           onClick={() => setBurger(!burger)}
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <span />
+          <span />
+          <span />
         </div>
       </nav>
     </header>

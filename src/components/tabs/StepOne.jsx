@@ -1,7 +1,6 @@
 //Import components
 import { useDispatch } from "react-redux";
 import { tabEdit } from "../../store/slices/main";
-
 //Import images
 import basic from "@images/basic.jpg";
 import basicHover from "@images/basicHover.jpg";
@@ -9,7 +8,6 @@ import standard from "@images/standard.jpg";
 import standardHover from "@images/standardHover.jpg";
 import premium from "@images/premium.jpg";
 import premiumHover from "@images/premiumHover.jpg";
-
 //Import styles
 import "@styles/components/stepOne.scss";
 

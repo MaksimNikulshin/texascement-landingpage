@@ -1,7 +1,7 @@
 //Import components
 import { Outlet } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Footer from "@components/App/Footer";
+import Header from "@components/App/Header";
 
 export default function Router() {
   return (

@@ -38,22 +38,8 @@ const main = createSlice({
     tabEdit(state, action) {
       state.currentTab = action.payload;
     },
-    pageEdit(state, action) {
-      state.page = action.payload;
-    },
-    mainEdit(state, action) {
-      state.main = action.payload;
-    },
-    modalEdit(state) {
-      state.modal = !state.modal;
-    },
-  },
-  extraReducers: (builder) => {
-    builder.addCase(requestMainEdit.fulfilled, (state, { payload }) => {
-      state.main = payload;
-    });
   },
 });
 
-export const { mainEdit, pageEdit, modalEdit, tabEdit } = main.actions;
+export const { tabEdit } = main.actions;
 export default main.reducer;
