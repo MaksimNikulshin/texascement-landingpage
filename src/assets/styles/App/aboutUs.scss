@@ -1,0 +1,75 @@
+#about-us {
+  background-image: url("../../images/aboutUs.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 70px;
+    padding-top: 20px;
+    gap: 20px;
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .description {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 35px;
+    text-align: center;
+    padding-top: 25px;
+    width: 80%;
+  }
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 20px;
+      width: 80%;
+      gap: 20px;
+      .fact {
+        font-size: 25px;
+        line-height: 29px;
+        text-align: center;
+        color: #ffffff;
+        max-width: 430px;
+      }
+    }
+  }
+  h4 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    padding: 80px 0px;
+    color: #ffffff;
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  #about-us {
+    .about {
+      margin-top: 30px;
+      flex-wrap: nowrap;
+    }
+  }
+}

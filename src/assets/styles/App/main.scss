@@ -1,0 +1,129 @@
+#main {
+  padding-top: 85px;
+  background-image: url(../../images/truckBackground.png);
+  background-size: cover;
+  min-height: 100vh;
+  .content-main {
+    color: #ffffff;
+    padding: 40px;
+    h1 {
+      font-size: 25px;
+      max-width: 450px;
+    }
+    h2 {
+      font-size: 60px;
+      max-width: 300px;
+    }
+    h3 {
+      font-size: 28px;
+      color: #ff9f01;
+      background-color: rgba(0, 23, 45, 0.6);
+      border-radius: 35px;
+      height: 55px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      max-width: 400px;
+    }
+    .cards {
+      margin-top: 40px;
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding-bottom: 250px;
+      .card {
+        width: 250px;
+        border-radius: 20px;
+        position: relative;
+        &:hover {
+          .description {
+            display: block;
+          }
+        }
+        h4 {
+          font-size: 30px;
+          padding: 20px;
+          position: relative;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+        }
+        .description {
+          display: none;
+          color: #000000;
+          padding: 20px;
+          margin-top: -20px;
+          background-color: #ffffff;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          button {
+            height: 40px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border-radius: 30px;
+            font-size: 30px;
+            margin-top: 10px;
+            b {
+              margin-left: 10px;
+            }
+          }
+        }
+        img {
+          border-radius: 20px;
+          width: 100%;
+          resize: cover;
+          height: 100%;
+        }
+        &:nth-last-of-type(1) {
+          background-color: #004b8f;
+          button {
+            border: 2px solid #004b8f;
+            b {
+              color: #004b8f;
+            }
+          }
+        }
+        &:nth-last-of-type(2) {
+          background-color: #d88600;
+          button {
+            border: 2px solid #d88600;
+            b {
+              color: #d88600;
+            }
+          }
+        }
+        &:nth-last-of-type(3) {
+          background-color: #004b8f;
+          button {
+            border: 2px solid #004b8f;
+            b {
+              color: #004b8f;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  #main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .content-main {
+      width: 80%;
+      .cards {
+        .card {
+          .description {
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,221 @@
+#course-outline {
+  width: 100%;
+  margin-top: 150px;
+  @media only screen and (min-width: 1300px) {
+    .slick-arrow {
+      display: block !important;
+      width: 60px;
+      height: 100px;
+      top: 40%;
+      z-index: 999;
+      &.slick-prev {
+        left: 40px;
+        &::before {
+          content: url("../../images/prevArrow.svg");
+        }
+      }
+      &.slick-next {
+        right: 80px;
+        &::before {
+          content: url("../../images/nextArrow.svg");
+        }
+      }
+    }
+    .slick-arrow.slick-disabled {
+      display: none !important;
+    }
+    .custom-dots {
+      position: relative;
+      display: flex !important;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .custom-dots li button {
+      font-size: 0;
+      width: 12px;
+      height: 12px;
+      border-radius: 50px;
+      background-color: #9b9b9b;
+    }
+    .custom-dots li.slick-active button {
+      background-color: #003c74;
+    }
+    .slide-one {
+      display: flex !important;
+      flex-wrap: wrap;
+      .truck-img {
+        width: 917px;
+        height: 738px;
+        padding-right: 60px;
+        padding-bottom: 60px;
+      }
+      .course {
+        display: flex;
+      }
+      .illustration {
+        margin-left: 100px;
+        max-height: 700px;
+        width: 180px;
+      }
+      h3 {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 70px;
+        padding-left: 33px;
+        color: #0e0e0e;
+      }
+      p {
+        max-width: 462px;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 35px;
+        padding-top: 35px;
+        padding-left: 33px;
+        color: #0e0e0e;
+      }
+    }
+
+    .slide-two {
+      .course {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .illustration {
+          max-height: 700px;
+          width: 180px;
+          margin-left: 50px;
+        }
+        h3 {
+          font-weight: 700;
+          font-size: 60px;
+          line-height: 70px;
+          padding-left: 33px;
+          color: #0e0e0e;
+        }
+        p {
+          max-width: 462px;
+          font-weight: 500;
+          font-size: 30px;
+          line-height: 35px;
+          padding-top: 35px;
+          padding-left: 33px;
+          color: #0e0e0e;
+        }
+        .description {
+          p {
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 29px;
+            max-width: 755px;
+            padding-left: 60px;
+            padding-top: 20px;
+            &:nth-child(1) {
+              padding-top: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1300px) {
+    .slick-arrow {
+      display: none;
+    }
+    .slick-arrow.slick-disabled {
+      display: none !important;
+    }
+    .custom-dots {
+      position: relative;
+      display: flex !important;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .custom-dots li button {
+      font-size: 0;
+      width: 12px;
+      height: 12px;
+      border-radius: 50px;
+      background-color: #9b9b9b;
+    }
+    .custom-dots li.slick-active button {
+      background-color: #003c74;
+    }
+    .slide-one {
+      display: flex !important;
+      flex-wrap: wrap;
+      gap: 50px;
+      .truck-img {
+        width: 100%;
+        height: 100%;
+        max-width: 700px;
+        border-radius: 30px;
+      }
+      .course {
+        display: flex;
+      }
+      .illustration {
+        display: none;
+      }
+      h3 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 70px;
+        padding-left: 33px;
+      }
+      p {
+        max-width: 462px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 35px;
+        padding-top: 35px;
+        padding-left: 33px;
+        color: #0e0e0e;
+      }
+    }
+
+    .slide-two {
+      .course {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        .illustration {
+          display: none;
+        }
+        h3 {
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 70px;
+          padding-left: 33px;
+        }
+        p {
+          max-width: 462px;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 35px;
+          padding-top: 35px;
+          padding-left: 33px;
+          color: #0e0e0e;
+        }
+        .description {
+          p {
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 29px;
+            max-width: 755px;
+            padding-left: 33px;
+            padding-top: 20px;
+            &:nth-child(1) {
+              padding-top: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
