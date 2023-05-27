@@ -1,7 +1,7 @@
 //Import components
-import CourseOutlineSliders from "@components/Pages/CourseOutlineSlider";
+import CourseOutlineSliders from "@components/Pages/PageCourseOutlineSlider";
 //Import styles
-import "@styles/App/courseOutline.scss";
+import "@styles/Pages/courseOutline.scss";
 
 export default function CourseOutline() {
   return (

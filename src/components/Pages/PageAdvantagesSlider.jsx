@@ -9,7 +9,7 @@ import dollar from "@images/dollar.svg";
 //Import styles
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "@styles/App/advantages.scss";
+import "@styles/Pages/advantages.scss";
 
 export default function AdvantagesSlider() {
   const settings = {
@@ -21,6 +21,7 @@ export default function AdvantagesSlider() {
     dotsClass: "custom-dots",
     adaptiveHeight: true,
   };
+
   return (
     <Slider {...settings}>
       <div className="slide-one">
@@ -37,7 +38,7 @@ export default function AdvantagesSlider() {
       </div>
       <div className="slide-two">
         <div className="advantages">
-          <img src={health} alt="healt-icon" />
+          <img src={health} alt="health-icon" />
           <p>
             <b className="titles">Health Benefits </b>
             As a cement truck operator, you won't be behind the wheel of an

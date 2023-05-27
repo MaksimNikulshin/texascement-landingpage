@@ -1,9 +1,9 @@
 //Import components
-import AdvantagesSlider from "@components/Pages/AdvantagesSlider";
+import AdvantagesSlider from "@components/Pages/PageAdvantagesSlider";
 //import images
 import starIcon from "@images/starIcon.svg";
 //Import styles
-import "@styles/App/advantages.scss";
+import "@styles/Pages/advantages.scss";
 
 export default function Advantages() {
   return (

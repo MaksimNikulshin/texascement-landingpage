@@ -3,16 +3,15 @@ import { tabEdit } from "../store/slices/main";
 import { useDispatch } from "react-redux";
 //Import images
 import basic from "@images/basic.jpg";
-import basicHover from "@images/basicHover.jpg";
 import standard from "@images/standard.jpg";
-import standardHover from "@images/standardHover.jpg";
 import premium from "@images/premium.jpg";
-import premiumHover from "@images/premiumHover.jpg";
 //Import styles
-import "@styles/App/main.scss";
+import "@styles/Pages/main.scss";
 
 export default function Main() {
+
   const dispatch = useDispatch();
+
   return (
     <section id="main">
       <div className="content-main">
@@ -39,10 +38,8 @@ export default function Main() {
                         name: "Basic",
                         price: "$2500",
                         img: basic,
-                        imgHover: basicHover,
                         paragraphOne: "• All course materials",
-                        paragraphTwo:
-                          "• Hands-on training with real cement trucks",
+                        paragraphTwo: "• Hands-on training with real cement trucks",
                         paragraphThree: "",
                         className: "rate-background",
                       },
@@ -71,7 +68,6 @@ export default function Main() {
                         name: "Standard",
                         price: "$3500",
                         img: standard,
-                        imgHover: standardHover,
                         paragraphOne: "• Includes all Basic features",
                         paragraphTwo:
                           "• Accommodations for out-of-town students",
@@ -90,7 +86,7 @@ export default function Main() {
             <img
               className="img-static"
               src={premium}
-              alt="hover-premium-truck"
+              alt="premium-truck"
             />
             <h4>Premium</h4>
             <div className="rate-background"></div>
@@ -107,7 +103,6 @@ export default function Main() {
                         name: "Premium",
                         price: "$5000",
                         img: premium,
-                        imgHover: premiumHover,
                         paragraphOne: "• Includes all Standard features",
                         paragraphTwo: "• A 1-year job placement guarantee",
                         paragraphThree:

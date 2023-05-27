@@ -6,7 +6,7 @@ import truckCourse from "@images/truckCourse.png";
 //Import styles
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "@styles/App/courseOutline.scss";
+import "@styles/Pages/courseOutline.scss";
 
 export default function CourseOutlineSlider() {
   const settings = {
@@ -18,6 +18,7 @@ export default function CourseOutlineSlider() {
     dotsClass: "custom-dots",
     adaptiveHeight: true,
   };
+
   return (
     <div>
       <Slider {...settings}>

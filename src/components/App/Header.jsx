@@ -11,49 +11,34 @@ import "@styles/components/header.scss";
 
 export default function Header() {
   const dispatch = useDispatch();
+
   const [burger, setBurger] = useState(false);
+
+  const reset = () => {
+    dispatch(
+      tabEdit({
+        tab: null,
+        step: 0,
+      })
+    );
+    window.scrollTo(0, 0);
+  };
+
   return (
     <header>
       <nav>
         <img
-          onClick={() => {
-            dispatch(
-              tabEdit({
-                tab: null,
-                step: 0,
-              })
-            );
-            window.scrollTo(0, 0);
-          }}
+          onClick={reset}
           className="texas-logo-desktop"
           src={logo}
           alt="texas-cement-logo"
         />
         <img
-          onClick={() => {
-            dispatch(
-              tabEdit({
-                tab: null,
-                step: 0,
-              })
-            );
-            window.scrollTo(0, 0);
-          }}
+          onClick={reset}
           className="texas-logo-mobile"
           src={mobileLogo}
           alt="texas-cement-logo"
         />
-        <Link
-          to="main"
-          onClick={() =>
-            dispatch(
-              tabEdit({
-                tab: null,
-                step: 0,
-              })
-            )
-          }
-        ></Link>
         <div className={burger ? "sub-menu active" : "sub-menu"}>
           <Link to="advantages" onClick={() => setBurger(false)}>
             Advantages

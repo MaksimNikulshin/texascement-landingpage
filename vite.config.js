@@ -12,6 +12,7 @@ export default defineConfig({
       '@images': resolve(__dirname, './src/assets/images'),
       '@components': resolve(__dirname, './src/components'),
       '@pages': resolve(__dirname, './src/pages'),
+      '@store': resolve(__dirname, './src/store') 
     }
   }
 })

@@ -2,12 +2,6 @@
 import axios from "axios";
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-//Configuration for requests
-const headers = {
-  Accept: "application/json",
-  "Content-Type": "application/json; charset=UTF-8",
-};
-const url = "http://127.0.0.1/";
 
 //Request for main edit
 export const requestMainEdit = createAsyncThunk(

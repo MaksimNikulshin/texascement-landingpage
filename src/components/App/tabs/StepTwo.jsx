@@ -2,13 +2,13 @@
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
-import { tabEdit } from "../../store/slices/main";
-
+import { tabEdit } from "@store/slices/main";
 //Import styles
 import "@styles/components/stepTwo.scss";
 
 export default function StepTwo() {
   const dispatch = useDispatch();
+
   const currentTab = useSelector((state) => state.mainReducer.currentTab);
 
   //Initialization form manager
@@ -69,13 +69,13 @@ export default function StepTwo() {
           <h4>You have chosen this package</h4>
           <div className="card">
             {currentTab?.tab?.img && (
-              <>
+              <div>
                 <img
                   className="img-static"
                   src={currentTab.tab.img}
                   alt="img-truck"
                 />
-              </>
+              </div>
             )}
             <h4>{currentTab?.tab?.name}</h4>
             <div className={currentTab?.tab?.className}></div>

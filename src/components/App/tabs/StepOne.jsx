@@ -1,18 +1,16 @@
 //Import components
 import { useDispatch } from "react-redux";
-import { tabEdit } from "../../store/slices/main";
+import { tabEdit } from "@store/slices/main";
 //Import images
 import basic from "@images/basic.jpg";
-import basicHover from "@images/basicHover.jpg";
 import standard from "@images/standard.jpg";
-import standardHover from "@images/standardHover.jpg";
 import premium from "@images/premium.jpg";
-import premiumHover from "@images/premiumHover.jpg";
 //Import styles
 import "@styles/components/stepOne.scss";
 
 export default function StepOne() {
   const dispatch = useDispatch();
+
   return (
     <div className="step-one">
       <div className="steps-line">
@@ -56,7 +54,6 @@ export default function StepOne() {
                         name: "Basic",
                         price: "$2500",
                         img: basic,
-                        imgHover: basicHover,
                         paragraphOne: "• All course materials",
                         paragraphTwo:
                           "• Hands-on training with real cement trucks",
@@ -89,7 +86,6 @@ export default function StepOne() {
                         name: "Standard",
                         price: "$3500",
                         img: standard,
-                        imgHover: standardHover,
                         paragraphOne: "• Includes all Basic features",
                         paragraphTwo:
                           "• Accommodations for out-of-town students",
@@ -123,7 +119,6 @@ export default function StepOne() {
                         name: "Premium",
                         price: "$5000",
                         img: premium,
-                        imgHover: premiumHover,
                         paragraphOne: "• Includes all Standard features",
                         paragraphTwo: "• A 1-year job placement guarantee",
                         paragraphThree:

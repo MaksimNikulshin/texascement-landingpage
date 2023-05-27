@@ -4,7 +4,7 @@ import checkSquare from "@images/check-square.svg";
 import checkCircle from "@images/check-circle.svg";
 import home from "@images/home.svg";
 //Import styles
-import "@styles/App/aboutUs.scss";
+import "@styles/Pages/aboutUs.scss";
 
 export default function AboutUs() {
   return (

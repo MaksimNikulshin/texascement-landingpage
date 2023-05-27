@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import arrowQuestion from "@images/arrowQuestion.svg";
 import helpCircle from "@images/helpCircle.svg";
 //import styles
-import "@styles/App/faq.scss";
+import "@styles/Pages/faq.scss";
 
 const faqData = [
   {
@@ -55,6 +55,7 @@ export default function Faq() {
   const toggleAnswer = (index) => {
     setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
   };
+
   return (
     <div id="faq">
       <h3 className="title">

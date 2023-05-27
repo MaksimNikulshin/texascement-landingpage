@@ -1,7 +1,7 @@
 //Import components
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { tabEdit } from "../../store/slices/main";
+import { tabEdit } from "@store/slices/main";
 //Import images
 import checkCircleGreen from "@images/check-circle-green.svg";
 //Import styles
